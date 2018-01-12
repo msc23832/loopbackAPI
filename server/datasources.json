@@ -1,0 +1,36 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mssql": {
+    "host": "192.168.28.130",
+    "port": 0,
+    "url": "mssql://sa:P@ssw0rd@192.168.28.130/HeinekenDB",
+    "database": "HeinekenDB",
+    "password": "P@ssw0rd",
+    "name": "mssql",
+    "user": "sa",
+    "connector": "mssql"
+  },
+  "DBconnect": {
+    "host": "192.168.28.130",
+    "port": 0,
+    "url": "mssql://sa:P@ssw0rd@192.168.28.130/HeinekenDB",
+    "database": "HeinekenDB",
+    "password": "P@ssw0rd",
+    "name": "DBconnect",
+    "user": "sa",
+    "connector": "mssql"
+  },
+  "PMSServer": {
+    "host": "10.41.55.4",
+    "port": 5432,
+    "url": "postgres://postgres:P@ssw0rd@10.41.55.4/DBPMS",
+    "database": "DBPMS",
+    "password": "P@ssw0rd",
+    "name": "PMSServer",
+    "user": "postgres",
+    "connector": "postgresql"
+  }
+}

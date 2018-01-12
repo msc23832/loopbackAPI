@@ -1,0 +1,101 @@
+{
+    "name": "mstroom",
+    "base": "PersistedModel",
+    "idInjection": false,
+    "options": {
+      "validateUpsert": true
+    },
+    "postgresql": {
+      "table": "mstroom"
+    },
+    "properties": {
+      "id": {
+        "type": "number",
+        "required": false,
+        "length": null,
+        "precision": null,
+        "scale": null,
+        "postgresql": {
+          "columnName": "id_room",
+          "dataType": "integer",
+          "dataLength": null,
+          "dataPrecision": null,
+          "dataScale": null,
+          "nullable": "YES"
+        }
+      },
+      "code_room": {
+        "type": "string",
+        "required": true
+      },
+      "name_room": {
+        "type": "string",
+        "required": true
+      },
+      "code_property": {
+        "type": "string",
+        "required": true
+      },
+      "code_floor": {
+        "type": "string",
+        "required": true
+      },
+      "code_roomtype": {
+        "type": "string",
+        "required": true
+      },
+      "desc_room": {
+        "type": "string",
+        "required": true
+      },
+      "code_roomfeature": {
+        "type": "string",
+        "required": true
+      },
+      "code_roomzone": {
+        "type": "string",
+        "required": true
+      },
+      "code_wing": {
+        "type": "string",
+        "required": true
+      },
+      "code_exposure": {
+        "type": "string",
+        "required": true
+      },
+      "code_building": {
+        "type": "string",
+        "required": true
+      },
+      "imgcatalog": {
+        "type": "string",
+        "required": true
+      },
+      "active": {
+        "type": "boolean",
+        "required": true
+      },
+      "createdate": {
+        "type": "date",
+        "required": true
+      },
+      "createby": {
+        "type": "number",
+        "required": true
+      },
+      "updatedate": {
+        "type": "date",
+        "required": true
+      },
+      "updateby": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+  }
+  

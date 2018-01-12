@@ -1,0 +1,65 @@
+{
+    "name": "mstroomtypegroup",
+    "base": "PersistedModel",
+    "idInjection": false,
+    "options": {
+      "validateUpsert": true
+    },
+    "postgresql": {
+      "table": "mstroomtypegroup"
+    },
+    "properties": {
+      "id": {
+        "type": "number",
+        "required": false,
+        "length": null,
+        "precision": null,
+        "scale": null,
+        "postgresql": {
+          "columnName": "id_roomtypegroup",
+          "dataType": "integer",
+          "dataLength": null,
+          "dataPrecision": null,
+          "dataScale": null,
+          "nullable": "YES"
+        }
+      },
+      "code_roomtypegroup": {
+        "type": "string",
+        "required": true
+      },
+      "name_roomtypegroup": {
+        "type": "string",
+        "required": true
+      },
+      "desc_roomtypegroup": {
+        "type": "string",
+        "required": true
+      },
+      "active": {
+        "type": "boolean",
+        "required": true
+      },
+      "createdate": {
+        "type": "date",
+        "required": true
+      },
+      "createby": {
+        "type": "number",
+        "required": true
+      },
+      "updatedate": {
+        "type": "date",
+        "required": true
+      },
+      "updateby": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+  }
+  

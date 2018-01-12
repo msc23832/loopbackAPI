@@ -1,0 +1,114 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "property": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "brand": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "city": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "country": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "proproomtype": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "mstroomtype": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "mstroom": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "mstbedtype": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "mstbuilding": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "mstwing": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "mstroomzone": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "mstroomfeature": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "mstexposure": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "mstfloor": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "mstroomtypegroup": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "mstroomclass": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "login": {
+    "dataSource": "PMSServer",
+    "public": true
+  },
+  "CustomUser": {
+    "dataSource": "db",
+    "public": true
+  },
+  "CustomToken": {
+    "dataSource": "db",
+    "public": false
+  }
+}

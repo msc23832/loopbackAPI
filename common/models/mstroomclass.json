@@ -1,0 +1,57 @@
+{
+    "name": "mstroomclass",
+    "base": "PersistedModel",
+    "idInjection": false,
+    "options": {
+      "validateUpsert": true
+    },
+    "postgresql": {
+      "table": "mstroomclass"
+    },
+    "properties": {
+      "id": {
+        "type": "number",
+        "required": false,
+        "length": null,
+        "precision": null,
+        "scale": null,
+        "postgresql": {
+          "columnName": "id_roomclass",
+          "dataType": "integer",
+          "dataLength": null,
+          "dataPrecision": null,
+          "dataScale": null,
+          "nullable": "YES"
+        }
+      },
+      "code_roomclass": {
+        "type": "string",
+        "required": true
+      },
+      "name_roomclass": {
+        "type": "string",
+        "required": true
+      },
+      "createdate": {
+        "type": "date",
+        "required": true
+      },
+      "createby": {
+        "type": "number",
+        "required": true
+      },
+      "updatedate": {
+        "type": "date",
+        "required": true
+      },
+      "updateby": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+  }
+  

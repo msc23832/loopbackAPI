@@ -1,0 +1,79 @@
+{
+  "name": "brand",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "postgresql": {
+    "table": "brand"
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "id_brand",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "code_brand": {
+      "type": "string",
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "code_brand",
+        "dataType": "character",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "name_brand": {
+      "type": "string",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "required": true
+    },
+    "brand_license": {
+      "type": "string",
+      "required": true
+    },
+    "brand_validate": {
+      "type": "date",
+      "required": true
+    },
+    "createdate": {
+      "type": "date",
+      "required": true
+    },
+    "createby": {
+      "type": "number",
+      "required": true
+    },
+    "updatedate": {
+      "type": "date",
+      "required": true
+    },
+    "updateby": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

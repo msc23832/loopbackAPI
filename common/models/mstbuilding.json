@@ -1,0 +1,69 @@
+{
+    "name": "mstbuilding",
+    "base": "PersistedModel",
+    "idInjection": false,
+    "options": {
+      "validateUpsert": true
+    },
+    "postgresql": {
+      "table": "mstbuilding"
+    },
+    "properties": {
+      "id": {
+        "type": "number",
+        "required": false,
+        "length": null,
+        "precision": null,
+        "scale": null,
+        "postgresql": {
+          "columnName": "id_building",
+          "dataType": "integer",
+          "dataLength": null,
+          "dataPrecision": null,
+          "dataScale": null,
+          "nullable": "YES"
+        }
+      },
+      "code_property": {
+        "type": "string",
+        "required": true
+      },
+      "code_building": {
+        "type": "string",
+        "required": true
+      },
+      "name_building": {
+        "type": "string",
+        "required": true
+      },
+      "desc_building": {
+        "type": "string",
+        "required": true
+      },
+      "code_wing": {
+        "type": "string",
+        "required": true
+      },
+      "createdate": {
+        "type": "date",
+        "required": true
+      },
+      "createby": {
+        "type": "number",
+        "required": true
+      },
+      "updatedate": {
+        "type": "date",
+        "required": true
+      },
+      "updateby": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+  }
+  

@@ -1,0 +1,73 @@
+{
+    "name": "country",
+    "base": "PersistedModel",
+    "idInjection": false,
+    "options": {
+      "validateUpsert": true
+    },
+    "postgresql": {
+      "table": "country"
+    },
+    "properties": {
+      "id": {
+        "type": "number",
+        "required": false,
+        "length": null,
+        "precision": null,
+        "scale": null,
+        "postgresql": {
+          "columnName": "id_country",
+          "dataType": "integer",
+          "dataLength": null,
+          "dataPrecision": null,
+          "dataScale": null,
+          "nullable": "YES"
+        },
+        "_selectable": false
+      },
+      "code_country": {
+        "type": "string",
+        "required": false,
+        "length": 10,
+        "precision": null,
+        "scale": null,
+        "postgresql": {
+          "columnName": "code_country",
+          "dataType": "character",
+          "dataLength": 10,
+          "dataPrecision": null,
+          "dataScale": null,
+          "nullable": "YES"
+        }
+      },
+      "name_country": {
+        "type": "string",
+        "required": true
+      },
+      "status": {
+        "type": "boolean",
+        "required": true
+      },
+      "createdate": {
+        "type": "date",
+        "required": true
+      },
+      "createby": {
+        "type": "number",
+        "required": true
+      },
+      "updatedate": {
+        "type": "date",
+        "required": true
+      },
+      "updateby": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+  }
+  

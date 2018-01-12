@@ -1,0 +1,105 @@
+{
+    "name": "mstroomtype",
+    "base": "PersistedModel",
+    "idInjection": false,
+    "options": {
+      "validateUpsert": true
+    },
+    "postgresql": {
+      "table": "mstroomtype"
+    },
+    "properties": {
+      "id": {
+        "type": "number",
+        "required": false,
+        "length": null,
+        "precision": null,
+        "scale": null,
+        "postgresql": {
+          "columnName": "id_roomtype",
+          "dataType": "integer",
+          "dataLength": null,
+          "dataPrecision": null,
+          "dataScale": null,
+          "nullable": "YES"
+        }
+      },
+      "seq_roomtype": {
+        "type": "string",
+        "required": true
+      },
+      "name_roomtype": {
+        "type": "string",
+        "required": true
+      },
+      "desc_roomtype": {
+        "type": "string",
+        "required": true
+      },
+      "code_roomclass": {
+        "type": "string",
+        "required": true
+      },
+      "code_roomtypegroup": {
+        "type": "string",
+        "required": true
+      },
+      "def_no_guest": {
+        "type": "number",
+        "required": true
+      },
+      "def_occ": {
+        "type": "number",
+        "required": true
+      },
+      "def_min_adult": {
+        "type": "number",
+        "required": true
+      },
+      "def_max_adult": {
+        "type": "number",
+        "required": true
+      },
+      "def_min_child": {
+        "type": "number",
+        "required": true
+      },
+      "def_max_child": {
+        "type": "number",
+        "required": true
+      },
+      "def_bed_addable": {
+        "type": "number",
+        "required": true
+      },
+      "def_bedtype": {
+        "type": "number",
+        "required": true
+      },
+      "max_no_bed": {
+        "type": "number",
+        "required": true
+      },
+      "createdate": {
+        "type": "date",
+        "required": true
+      },
+      "createby": {
+        "type": "number",
+        "required": true
+      },
+      "updatedate": {
+        "type": "date",
+        "required": true
+      },
+      "updateby": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+  }
+  

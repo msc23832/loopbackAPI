@@ -1,0 +1,108 @@
+{
+  "name": "property",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "postgresql": {
+    "table": "property"
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "id_property",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": false
+    },
+    "code_property": {
+      "type": "string",
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "code_property",
+        "dataType": "character",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "name_property": {
+      "type": "string",
+      "required": true
+    },
+    "code_brand": {
+      "type": "string",
+      "required": true
+    },
+    "address1": {
+      "type": "string",
+      "required": true
+    },
+    "address2": {
+      "type": "string",
+      "required": true
+    },
+    "address3": {
+      "type": "string",
+      "required": true
+    },
+    "activatedkey": {
+      "type": "string",
+      "required": true
+    },
+    "code_city": {
+      "type": "string",
+      "required": true
+    },
+    "code_citycountry": {
+      "type": "string",
+      "required": true
+    },
+    "code_country": {
+      "type": "string",
+      "required": true
+    },
+    "postcode": {
+      "type": "string",
+      "required": true
+    },
+    "no_rooms": {
+      "type": "number",
+      "required": true
+    },
+    "createdate": {
+      "type": "date",
+      "required": true
+    },
+    "createby": {
+      "type": "number",
+      "required": true
+    },
+    "updatedate": {
+      "type": "date",
+      "required": true
+    },
+    "updateby": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
